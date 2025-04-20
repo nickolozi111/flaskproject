@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Page</title>
+</head>
+<body>
+    <h1>{{ theme }}</h1>
+    {% if show_content %}
+        <p>This is some extra content displayed conditionally!</p>
+    {% else %}
+        <p>Content is hidden.</p>
+    {% endif %}
+</body>
+</html>
