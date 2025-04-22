@@ -6,11 +6,19 @@
     <title>Home Page</title>
 </head>
 <body>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/about">About</a> |
+      <a href="/third_page">Third Page</a>
+    </nav>
+    <hr>
+
+
     <h1>{{ home_text }}</h1>
     <h2>Items List:</h2>
     <ul>
         {% for item in items %}
-            <li>{{ item }}</li>  <!-- Loop through items -->
+            <li>{{ item }}</li>
         {% endfor %}
     </ul>
 </body>

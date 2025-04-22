@@ -16,7 +16,7 @@ def about():
 @app.route('/third_page')
 def third_page():
     theme = "This is a dynamic page about Tech."
-    show_content = True  # Conditional content
+    show_content = True
     return render_template('third_page.html', theme=theme, show_content=show_content)
 
 if __name__ == "__main__":
